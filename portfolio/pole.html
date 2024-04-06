@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!-- Theme mainly stolen from Adrian Dalca's Personal Website (http://www.mit.edu/~adalca/)
+     which was based off of an original design at: <a href="http://www.istoredesigns.com/" target="_blank">MiniFolio</a>
+     that no longer exists but you can hunt down through PremiumFreebies.eu -->
+
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+<meta name="author" content="Chris Saulnier">
+<meta name="description" content="Personal webpage of Chris Saulnier">
+<meta name="keywords" content="design,mit,wilderness education,chris saulnier">
+
+<title>Chris Saulnier - Projects</title>
+
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+
+<!-- need to grab and update the ie stylesheet -->
+
+<!--[if IE]>
+<link rel="stylesheet" type="text/css" href="./css/style-ie.css" />
+<![endif]-->
+</head>
+<body>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-60345341-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+    <!--  MAIN  NAVIGATION--> 
+    <div id="main_navigation" class="main-menu ">
+        <ul> 
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../projects.html">Projects</a></li>
+            <li><a href="../pubs.html">Publications</a></li>
+            <li><a href="../portfolio.html">Portfolio</a></li>
+            <li><a href="../teaching.html">Teaching</a></li>
+	          <li><a href="../adventures.html">Adventures</a></li>
+        </ul> 
+    </div>
+
+<div id="main_container">
+
+    
+<div class="page_content">
+  
+  
+<div id="header_container">
+    <div id="headshot">
+        <img src="../img/headshot.jpg" align="middle">
+    </div>
+    
+    <div id="main_info_container">
+     
+        <h1 style="width:360px;">Christopher Robert Saulnier</h1>
+                         
+         <div style="position: absolute; float: right; right:20px;">
+         <img src="../img/mit.png">
+         </div>
+                 
+        <div class="pages_post_descr">
+        
+            <div class="pages_post_descr_main">
+              PhD Candidate, 
+              Product Design and Engineering Education<br>
+              <a href="http://sutd.mit.edu/" target="_blank">MIT-SUTD Collaboration Office</a>
+              <br>
+              <a href="http://mit.edu" target="_blank">Massachusetts Institute of Technology</a><br>
+              <br>
+              <strong>Contact</strong>:<br>
+              77 Mass. Ave, Building 3-339L, Cambridge, MA, 02139.&nbsp;<br>
+            saulnier at mit dot edu<br>
+            <br>
+			       
+   <label class="collapse" for="_cv">Resume</label><input id="_cv" type="checkbox"><div>: <a href="../doc/resume.pdf">1 page</a> | <a href="../doc/cv.pdf">CV</a> | <a href="https://www.linkedin.com/in/chris-saulnier-6953475b/">Linkedin</a>
+
+    </div> 
+			
+            </div>
+        </div>    	
+    </div>
+</div>
+     
+<h1>GPS Location Aware Trekking Pole</h1>
+
+<div class="portfolio">
+	
+  <div class="portfolio-img"> 
+	 <img src="./img/pole-1.jpg" id="p">
+   <p id="text">While taking MAS.863, the MIT Media Lab class better known as <i>How to Make (Almost) Anything</i> I individually developed and prototyped a location aware trekking pole. The final prototype was built using 3D printing, casting, composite thermomolding, and custom circuit board design and production via milling. The custom circuit boards were my own design consisting of arduino compatible boards built around an Atmega328P, using an nRF24L01+ for RF communication and the MTK3339 GPS Module alongside an OLED screen for output.</p> 
+  </div>  
+
+<br/>
+
+  <div>	
+		<img src="./img/pole-1-thumb.jpg" onclick="document.getElementById('p').src = './img/pole-1.jpg';document.getElementById('text').innerHTML = 'While taking MAS.863, the MIT Media Lab class better known as <i>How to Make (Almost) Anything</i> I individually developed and prototyped a location aware trekking pole. The final prototype was built using 3D printing, casting, composite thermomolding, and custom circuit board design and production via milling. The custom circuit boards were my own design consisting of arduino compatible boards built around an Atmega328P, using an nRF24L01+ for RF communication and the MTK3339 GPS Module alongside an OLED screen for output.';" alt="" title="" border="">
+	</div>
+  
+  <div>
+    	<img src="./img/pole-2-thumb.jpg" onclick="document.getElementById('p').src = './img/pole-2.jpg'; document.getElementById('text').innerHTML = 'Trekking poles give users increased stability, confidence and speed while traveling through uneven terrain and are popular with hikers, backpackers and mountaineers. As something that is always already in your hands, they are an excellent target for technological augmentation. While an experienced navigator has a whole handbag of tricks to draw from when determining direction of travel, sometimes the only way to be sure is by constantly being aware of subtle clues such as the position of the sun. An augmented trekking pole could be useful for maintaining awareness of direction of travel for experts in safety-critical situations and recreationalists while learning and practicing basic navigational skills. The individual pieces were modeled in solidworks, modified from a commercially available pole, while developing the concept.';" alt="" title="" border="" >
+  </div>
+
+  <div>
+    	<img src="./img/pole-3-thumb.jpg" onclick="document.getElementById('p').src = './img/pole-3.jpg'; document.getElementById('text').innerHTML = 'The body of the trekking pole was fairly small, and I needed to design a circuit that would be able to both talk to the OLED screen and the communications module. This was challenging but fun. I used a few tricks to make the board small, the most notable being running a few traces under pins on the processor to reduce some of the routing that would have otherwise had to run outside of the board. Being able to mill and hand solder my own boards from copper-coated sheets allowed me to rapidly move through board revisions. ';" alt="" title="" border="">  
+  </div>
+
+  	<div>
+    	<img src="./img/pole-4-thumb.jpg" onclick="document.getElementById('p').src = './img/pole-4.jpg'; document.getElementById('text').innerHTML = 'This prototype receives GPS information from another processor through the RF module. The information is then used to indicate which direction north is with an arrow. My early prototyping included successfully logging an 11-hour drive to Canada.'; " alt="" title="" border="">  
+  	</div>
+
+  	<div>
+    	<img src="./img/pole-5-thumb.jpg" onclick="document.getElementById('p').src = './img/pole-5.jpg'; document.getElementById('text').innerHTML = 'To make a custom composite shaft that could integrate with a commercially available lower pole section and also contain the AA batteries used to provide power I wrapped a 3 layer thermoplastic and fiberglass shaft that I melted together in an oven. The inner and outer wraps were made tightly around a steel rod by hand, and the middle wrap consisted of fibers running up and down the length of the shaft to give it strength along its main axis. A wrap of silicone around the outside provided compaction against the inner surface and while the thermoplastic was baked for an hour at 450 degrees.';" alt="" title="" border=""> 
+  	</div>
+ 
+</div>
+
+
+
+
+  
+<p>&nbsp;</p>
+</div>
+  
+<div class="blue_divider"></div> 
+                    	
+<div style="margin-right:20px;">
+  <p style="color: #CCCCCC; text-align:right;">&copy; Chris Saulnier 2018</p>  
+</div>
+
+
+</div><!--end of main_container--> 
+
+<div style="height:1px;"></div>
+
+</body></html>
