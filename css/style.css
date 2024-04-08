@@ -353,12 +353,13 @@ a#logo {
 		margin:0;
 		left: 0;
 		transform: none;
+		font-size: 0.9em;
     }
 
 	#main_navigation ul {
         display: block;
         width: 100% !important;
-		overflow:auto;
+		overflow: visible;
 		white-space: wrap;
     }
 }
@@ -589,7 +590,7 @@ img.smallpost_thumb{float:left;width:50px; height:50px; border:1px #eeeeee solid
 }
 
 .archive_post_text {	
-	width:780px;
+	max-width:780px;
 	display:inline-block;
 }
 
