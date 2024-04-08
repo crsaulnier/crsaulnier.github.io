@@ -358,16 +358,17 @@ a#logo {
     }
 
 	#main_navigation ul {
-        display: flex;
-		flex-wrap: wrap;
+        display: flex !important;
+		flex-wrap: wrap !important;
         /*width: 100% !important;*/
 		overflow: visible;
 		white-space: wrap;
-		height: auto;
+		height: auto !important;
     }
 
 	.main-menu ul li {
 		display: inline-block;
+		height: 30px;
 		/*display: table-cell;*/
 	}
 
@@ -459,7 +460,7 @@ a#logo {
 	background: -ms-linear-gradient(top,  #0099cb 0%,#0370ea 100%); /* IE10+ */
 	background: linear-gradient(to bottom,  #0099cb 0%,#0370ea 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0099cb', endColorstr='#0370ea',GradientType=0 ); /* IE6-9 */
-	height:50px;
+	/*height:50px;*/
 	color:#FFF;
 }
 
