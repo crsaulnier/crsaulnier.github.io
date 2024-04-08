@@ -18,8 +18,10 @@ body{
 	height: 100px;
 	background: url(./images/top_bg.jpg) no-repeat center top;
 	color: #000;
-	font: 14px "Merriweather Sans","Roboto",Helvetica,Helvetica Neue,Arial;
-	font-weight: 300;
+	/*font: "Merriweather Sans","Roboto","Helvetica","Helvetica Neue","Arial";*/
+	/*font-weight: 300;*/
+	font-family: Arial, sans-serif;
+	font-size: 1em;
 }
 
 strong {
@@ -31,10 +33,10 @@ a{color:#0099cb; text-decoration:none; }
 a:hover{text-decoration:none;color:#d64760;}
 
 p{
-	text-align: justify;
+	/*text-align: justify;*/
 	padding: 5px 0px 5px 0;
 	margin: 0px;
-	line-height: 20px;
+	line-height: 1.5em;
 }
 .clear{clear:both;}
 
@@ -187,7 +189,7 @@ h4{
 * main container                   *
 ************************************/
 #main_container{
-	width: 960px;
+	max-width: 960px;
 	margin: 0 auto;
 	margin-top: 30px;
 	margin-bottom:20px;
@@ -223,9 +225,9 @@ h4{
 #main_info_container{
 	position: relative;
 	margin-left: 200px;
-	width: 730px;
+	max-width: 730px;
 	padding-left: 0px;
-	font-size:14px;
+	font-size:.9em;
 	padding-top: 10px;
 }
 
@@ -241,9 +243,7 @@ h4{
 }
 
 
-
-#main_container_2{width:900px;height:auto;margin:0px 0 0 230px;padding:0px 0 40px 0; float:left; background-color:#fff; position:relative;-moz-box-shadow:0 0 6px #7d7d7d;-webkit-box-shadow:0 0 6px #7d7d7d;box-shadow:0 6px 6px #7d7d7d;}
-#header{width:1000px;height:160px;margin:auto;}
+#header{max-width:1000px;height:160px;margin:auto;}
 a.bookmark{
 position:fixed;
 top:10px; left:1131px; text-decoration:none;
@@ -287,7 +287,7 @@ padding:5px 0 5px 0;
 
 
 .blue_divider{
-	width: 920px;
+	max-width: 920px;
 	height: 1px;
 	border-top:2px solid #0099cb; 
 	clear: both;
@@ -295,7 +295,7 @@ padding:5px 0 5px 0;
 }
 
 .bottom_divider{
-	width: 960px;
+	max-width: 960px;
 	height: 10px;
 	background: url(./images/bottom_divider.gif) repeat-x  top right;
 	clear: both;
@@ -346,28 +346,44 @@ a#logo {
 
 /*-------------MAIN NAVIGATION------------------*/
 
+/* Responsive Navigation Menu for Mobile Devices */
+@media screen and (max-width: 768px) {
+    #main_navigation {
+        position: relative;
+		margin:0;
+		left: 0;
+		transform: none;
+    }
+
+	#main_navigation ul {
+        display: block;
+        width: 100% !important;
+		overflow:auto;
+		white-space: wrap;
+    }
+}
+
 #main_navigation {
-	right:0px;
-	padding-top: 5px;
-	float: right;
-	width: 100%;
-	margin-top: -20px;
+	position: absolute;
+	margin-top: -15px;
+	left: 50%; /* Center align the navigation */
+    transform: translateX(-50%); /* Shift it back by half its own width to truly center it */
+	/*margin-top: -20px;*/
 	/*margin: auto;*/
 	/*background-color:#FFF;*/
 	text-align: center;
-	
 	z-index: 100;
 	font-size: 14px;
 }
 
 #main_navigation  ul {
-	right: 0px;
+	display: inline-block;
 	/*width: 455px;*/
-	width: 542px;
 	height: 30px;
-	margin: 0px auto;
+	margin: 0;
+	padding: 0;
 	z-index:-1;
-	padding-left:0px;
+	/*padding-left:0px;*/
 	border:1px solid rgb(0, 145, 237);
 	background-color:#FFF;
 	-moz-box-shadow: 0 0 6px #7d7d7d;
@@ -375,6 +391,7 @@ a#logo {
 	box-shadow: 0 0 6px #7d7d7d;
 	overflow:hidden;
 	white-space: nowrap;
+	list-style-type:none;
 }
 
 
@@ -382,11 +399,6 @@ a#logo {
 	position:relative;
 	z-index:-1;
 	font-family:'Droid Sans', arial, serif;
-}
-.main-menu ul {
-	margin:0;
-	padding:0;
-	list-style-type:none;
 }
 
 .main-menu ul a:hover {
@@ -401,7 +413,7 @@ a#logo {
 }
 .main-menu ul li a,.main-menu ul li a:link,.main-menu ul li a:visited {
 	line-height:20px;
-	font-size:14px;
+	font-size:1em;
 	text-align:center;
 }
 .main-menu ul li a:hover {
@@ -471,8 +483,6 @@ display: block;
 margin-left: 12px;
 height: 25px;
 }
-
-class="thispage"
 
 .icon-bwh {
 	background:url(images/logos/BWH_25_bw.jpg) no-repeat;
@@ -659,7 +669,7 @@ img.sidebarpost_thumb{float:left;width:50px; height:50px; border:1px #eeeeee sol
 
 
 .page_content{
-	width: 920px;
+	max-width: 920px;
 	padding-top: 20px;
 	padding-right: 20px;
 	padding-bottom: 0;
@@ -667,7 +677,7 @@ img.sidebarpost_thumb{float:left;width:50px; height:50px; border:1px #eeeeee sol
 }
 .pages_thumb{border:3px #dfddd4 solid; margin:24px 0 20px 0;}
 .pages_post_descr{
-	width: 650px;
+	max-width: 650px;
 	border-top: 0px;
 	border-bottom: 0px;
 	;
