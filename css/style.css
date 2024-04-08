@@ -349,19 +349,28 @@ a#logo {
 /* Responsive Navigation Menu for Mobile Devices */
 @media screen and (max-width: 768px) {
     #main_navigation {
-        position: relative;
+        position: absolute;
 		margin:0;
 		left: 0;
+		width: 100% !important;
 		transform: none;
 		font-size: 0.9em;
     }
 
 	#main_navigation ul {
-        display: block;
-        width: 100% !important;
+        display: flex;
+		flex-wrap: wrap;
+        /*width: 100% !important;*/
 		overflow: visible;
 		white-space: wrap;
+		height: auto;
     }
+
+	.main-menu ul li {
+		display: inline-block;
+		/*display: table-cell;*/
+	}
+
 }
 
 #main_navigation {
