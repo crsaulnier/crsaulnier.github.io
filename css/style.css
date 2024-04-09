@@ -347,13 +347,13 @@ a#logo {
 /*-------------MAIN NAVIGATION------------------*/
 
 /* Responsive Navigation Menu for Mobile Devices */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
     #main_navigation {
         position: absolute;
 		margin:0;
-		left: 0;
-		width: 100% !important;
-		transform: none;
+		left: 0 !important;
+		/*width: 100% !important;*/
+		transform: none !important;
 		font-size: 0.9em;
     }
 
@@ -370,6 +370,10 @@ a#logo {
 		display: inline-block;
 		height: 30px;
 		/*display: table-cell;*/
+	}
+
+	.page_content {
+		margin-top: 30px;
 	}
 
 }
